@@ -11,8 +11,13 @@ public class UserInfoDeserializer implements Deserializer<UserInfoDto> {
 
     private static final Logger log= LoggerFactory.getLogger(UserInfoDeserializer.class);
 
-
     private final ObjectMapper objectMapper;
+
+
+    public UserInfoDeserializer() {
+        this.objectMapper = new ObjectMapper();
+    }
+
 
     public UserInfoDeserializer(ObjectMapper objectMapper){
         this.objectMapper=objectMapper;
