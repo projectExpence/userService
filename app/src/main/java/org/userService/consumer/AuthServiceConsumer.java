@@ -30,7 +30,7 @@ public class AuthServiceConsumer {
     @KafkaListener(topics = "${spring.kafka.topic.name}",groupId = "${spring.kafka.consumer.group-id}")
     public void listen(UserInfoDto userInfoDto){
         try{
-        userRepository.findById(userInfoDto.getUserId())
+        userRepository.findById(userInfoDto.getEmail())
                 .ifPresentOrElse(existingUser ->{
                     existingUser.setFirstName(userInfoDto.getFirstName());
                     existingUser.setLastName(userInfoDto.getLastName());
