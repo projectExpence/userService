@@ -3,11 +3,9 @@ package org.userService.controller;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-import org.userService.dto.UpdateUserRequest;
+import org.springframework.web.bind.annotation.*;
+import org.userService.dto.UpdateUserRequestDto;
+import org.userService.dto.UserProfileDto;
 import org.userService.repository.UserRepository;
 
 @RestController
@@ -18,7 +16,7 @@ public class UserController {
 
     @PutMapping("/update")
     public ResponseEntity<?> updateUserProfile(
-            @RequestBody UpdateUserRequest request,
+            @RequestBody UpdateUserRequestDto request,
             Authentication authentication
             ){
         String email = (String) authentication.getPrincipal();
@@ -44,5 +42,22 @@ public class UserController {
                 .orElse(ResponseEntity.notFound().build());
 
 
+    }
+    @GetMapping("/me")
+    public ResponseEntity<?> getMyProfile(Authentication authentication){
+        String email =(String) authentication.getPrincipal();
+
+        return userRepository.findByEmail(email)
+                .map(user->{
+                    UserProfileDto profile = UserProfileDto.builder()
+                            .firstName(user.getFirstName())
+                            .lastName(user.getLastName())
+                            .email(user.getEmail())
+                            .username(user.getUsername())
+                            .profilePictureUrl(user.getProfilePictureUrl())
+                            .build();
+                    return ResponseEntity.ok(profile);
+
+                }). orElse(ResponseEntity.notFound().build());
     }
 }

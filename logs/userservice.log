@@ -4472,3 +4472,195 @@ This generated password is for development use only. Your security configuration
 2025-09-01T15:39:21.864+05:30  INFO 26616 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2025-09-01T15:39:21.866+05:30  INFO 26616 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
 2025-09-01T15:41:16.274+05:30  INFO 26616 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.u.consumer.AuthServiceConsumer         : ✅ New user saved: vivekshaw16689g5r66@gmail.com
+2025-09-01T16:28:36.875+05:30  INFO 8912 --- [main] org.userService.App                      : Starting App using Java 21.0.8 with PID 8912 (C:\Users\VIVEK\Documents\Projects\project_expence\userService\app\build\classes\java\main started by VIVEK in C:\Users\VIVEK\Documents\Projects\project_expence\userService)
+2025-09-01T16:28:36.878+05:30 DEBUG 8912 --- [main] org.userService.App                      : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-09-01T16:28:36.879+05:30  INFO 8912 --- [main] org.userService.App                      : No active profile set, falling back to 1 default profile: "default"
+2025-09-01T16:28:37.893+05:30  INFO 8912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-01T16:28:37.960+05:30  INFO 8912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interface.
+2025-09-01T16:28:38.945+05:30  INFO 8912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-09-01T16:28:38.959+05:30  INFO 8912 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-01T16:28:38.960+05:30  INFO 8912 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-09-01T16:28:39.028+05:30  INFO 8912 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-01T16:28:39.029+05:30  INFO 8912 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2100 ms
+2025-09-01T16:28:39.269+05:30 DEBUG 8912 --- [main] org.userService.security.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2025-09-01T16:28:39.445+05:30  INFO 8912 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-01T16:28:39.510+05:30  INFO 8912 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-09-01T16:28:39.550+05:30  INFO 8912 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-01T16:28:39.793+05:30  INFO 8912 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-01T16:28:39.832+05:30  INFO 8912 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-01T16:28:40.138+05:30  INFO 8912 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c79ca55
+2025-09-01T16:28:40.140+05:30  INFO 8912 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-01T16:28:40.180+05:30  WARN 8912 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-01T16:28:40.181+05:30  WARN 8912 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-01T16:28:40.896+05:30  INFO 8912 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-01T16:28:40.943+05:30  INFO 8912 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-01T16:28:41.295+05:30  WARN 8912 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-01T16:28:41.346+05:30  WARN 8912 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c7ca4473-c3db-4c7c-b110-a77880c7a7b0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-01T16:28:41.708+05:30  INFO 8912 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-09-01T16:28:41.765+05:30  INFO 8912 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3e866323, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73624529, org.springframework.security.web.context.SecurityContextHolderFilter@4bf6bc2d, org.springframework.security.web.header.HeaderWriterFilter@359f3401, org.springframework.web.filter.CorsFilter@31e1c7c, org.springframework.security.web.authentication.logout.LogoutFilter@1e8c9083, org.userService.security.JwtAuthFilter@234cd86c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18206382, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a642c54, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@30ae3c46, org.springframework.security.web.access.ExceptionTranslationFilter@2052c49f, org.springframework.security.web.access.intercept.AuthorizationFilter@49a0fe14]
+2025-09-01T16:28:42.401+05:30  INFO 8912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2025-09-01T16:28:42.454+05:30  INFO 8912 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-userinfo-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = userinfo-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.userService.deserializer.UserInfoDeserializer
+
+2025-09-01T16:28:42.621+05:30  INFO 8912 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
+2025-09-01T16:28:42.621+05:30  INFO 8912 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
+2025-09-01T16:28:42.621+05:30  INFO 8912 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1756724322620
+2025-09-01T16:28:42.631+05:30  INFO 8912 --- [main] fkaConsumerFactory$ExtendedKafkaConsumer : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Subscribed to topic(s): userinfo_json
+2025-09-01T16:28:42.651+05:30  INFO 8912 --- [main] org.userService.App                      : Started App in 6.216 seconds (process running for 6.652)
+2025-09-01T16:28:43.117+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Cluster ID: prG7UUdBQx-FsTUT5D00Vg
+2025-09-01T16:28:43.118+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-09-01T16:28:43.120+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] (Re-)joining group
+2025-09-01T16:28:43.153+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Request joining group due to: need to re-join with the given member-id: consumer-userinfo-consumer-group-1-22a00643-6acf-46ba-8759-bc9f0d6b4b26
+2025-09-01T16:28:43.155+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2025-09-01T16:28:43.155+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] (Re-)joining group
+2025-09-01T16:28:46.296+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Successfully joined group with generation Generation{generationId=54, memberId='consumer-userinfo-consumer-group-1-22a00643-6acf-46ba-8759-bc9f0d6b4b26', protocol='range'}
+2025-09-01T16:28:46.303+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Finished assignment for group at generation 54: {consumer-userinfo-consumer-group-1-22a00643-6acf-46ba-8759-bc9f0d6b4b26=Assignment(partitions=[userinfo_json-0])}
+2025-09-01T16:28:46.339+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Successfully synced group in generation Generation{generationId=54, memberId='consumer-userinfo-consumer-group-1-22a00643-6acf-46ba-8759-bc9f0d6b4b26', protocol='range'}
+2025-09-01T16:28:46.340+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Notifying assignor about the new Assignment(partitions=[userinfo_json-0])
+2025-09-01T16:28:46.343+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Adding newly assigned partitions: userinfo_json-0
+2025-09-01T16:28:46.357+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Setting offset for partition userinfo_json-0 to the committed offset FetchPosition{offset=10, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2025-09-01T16:28:46.358+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : userinfo-consumer-group : partitions assigned: [userinfo_json-0]
+2025-09-01T16:29:32.012+05:30  INFO 8912 --- [http-nio-9090-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-01T16:29:32.012+05:30  INFO 8912 --- [http-nio-9090-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-01T16:29:32.014+05:30  INFO 8912 --- [http-nio-9090-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-09-01T16:31:03.581+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node -1 disconnected.
+2025-09-01T16:31:03.582+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 2147483646 disconnected.
+2025-09-01T16:31:03.583+05:30  INFO 8912 --- [kafka-coordinator-heartbeat-thread | userinfo-consumer-group] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:03.583+05:30  INFO 8912 --- [kafka-coordinator-heartbeat-thread | userinfo-consumer-group] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Cancelled in-flight FETCH request with correlation id 316 due to node 1 being disconnected (elapsed time since creation: 225ms, elapsed time since send: 225ms, request timeout: 30000ms)
+2025-09-01T16:31:03.583+05:30  INFO 8912 --- [kafka-coordinator-heartbeat-thread | userinfo-consumer-group] o.a.kafka.clients.FetchSessionHandler    : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Error sending fetch request (sessionId=167708873, epoch=262) to node 1:
+
+org.apache.kafka.common.errors.DisconnectException: null
+
+2025-09-01T16:31:03.588+05:30  INFO 8912 --- [kafka-coordinator-heartbeat-thread | userinfo-consumer-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Group coordinator localhost:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: coordinator unavailable. isDisconnected: true. Rediscovery will be attempted.
+2025-09-01T16:31:03.689+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:03.689+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Cancelled in-flight API_VERSIONS request with correlation id 317 due to node 1 being disconnected (elapsed time since creation: 4ms, elapsed time since send: 4ms, request timeout: 30000ms)
+2025-09-01T16:31:03.858+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:03.858+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Cancelled in-flight API_VERSIONS request with correlation id 318 due to node 1 being disconnected (elapsed time since creation: 3ms, elapsed time since send: 3ms, request timeout: 30000ms)
+2025-09-01T16:31:04.151+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:04.151+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Cancelled in-flight API_VERSIONS request with correlation id 319 due to node 1 being disconnected (elapsed time since creation: 2ms, elapsed time since send: 2ms, request timeout: 30000ms)
+2025-09-01T16:31:04.630+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:04.630+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:05.296+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:05.297+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:06.523+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:06.523+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:07.441+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:07.442+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:08.641+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:08.641+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:09.683+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:09.683+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:10.604+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:10.604+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:11.772+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:11.772+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:12.686+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:12.686+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:13.771+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:13.771+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:14.937+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:14.938+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:16.041+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:16.041+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:17.023+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:17.023+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:18.153+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:18.153+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:19.132+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:19.132+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.

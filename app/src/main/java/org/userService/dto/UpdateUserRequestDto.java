@@ -3,7 +3,7 @@ package org.userService.dto;
 import lombok.Data;
 
 @Data
-public class UpdateUserRequest {
+public class UpdateUserRequestDto {
     private String firstName;
     private String lastName;
     private String username;
