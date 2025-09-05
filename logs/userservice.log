@@ -4154,9 +4154,9 @@ This generated password is for development use only. Your security configuration
 2025-09-01T15:30:39.176+05:30  INFO 24340 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2025-09-01T15:30:39.176+05:30  INFO 24340 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2025-09-01T15:30:39.177+05:30  INFO 24340 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-09-01T15:36:31.918+05:30 ERROR 24340 --- [http-nio-9090-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value : org.userService.entities.UserEntity.username] with root cause
+2025-09-01T15:36:31.918+05:30 ERROR 24340 --- [http-nio-9090-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value : org.userService.entities.UserInfo.username] with root cause
 
-org.hibernate.PropertyValueException: not-null property references a null or transient value : org.userService.entities.UserEntity.username
+org.hibernate.PropertyValueException: not-null property references a null or transient value : org.userService.entities.UserInfo.username
 	at org.hibernate.engine.internal.Nullability.checkNullability(Nullability.java:109) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
 	at org.hibernate.engine.internal.Nullability.checkNullability(Nullability.java:54) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
 	at org.hibernate.event.internal.DefaultFlushEntityEventListener.scheduleUpdate(DefaultFlushEntityEventListener.java:253) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
@@ -4664,3 +4664,1214 @@ org.apache.kafka.common.errors.DisconnectException: null
 2025-09-01T16:31:18.153+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
 2025-09-01T16:31:19.132+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
 2025-09-01T16:31:19.132+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:19.982+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:19.983+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:20.840+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:20.840+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:21.939+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:21.940+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:22.979+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:22.979+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:24.148+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:24.149+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:25.065+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:25.065+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:26.226+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:26.227+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:27.145+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:27.146+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:28.044+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:28.044+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:29.025+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:29.025+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:30.005+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:30.005+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:31.109+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:31.109+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:32.150+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:32.153+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:33.178+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:33.178+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:34.284+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:34.284+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:35.203+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:35.203+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:36.122+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:36.122+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:37.226+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:37.226+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:38.067+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:38.068+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:38.922+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:38.923+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:39.901+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:39.901+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:40.872+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:40.873+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:41.730+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:41.730+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:42.833+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:42.833+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:43.814+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:43.814+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:44.792+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:44.792+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:45.960+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:45.961+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:47.065+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:47.065+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:47.920+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:47.920+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:49.151+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:49.151+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:50.192+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:50.193+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:51.051+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:51.051+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:52.283+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:52.283+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:53.341+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:53.342+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:54.508+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:54.508+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:55.736+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:55.736+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:56.716+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:56.717+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:57.945+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:57.945+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:58.988+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:58.988+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:31:59.968+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:31:59.968+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:00.886+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:00.886+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:01.868+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:01.868+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:03.052+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:03.052+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:04.030+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:04.031+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:04.950+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:04.950+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:05.922+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:05.923+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:06.900+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:06.901+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:07.820+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:07.820+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:08.687+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:08.687+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:09.604+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:09.604+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:10.586+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:10.586+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:11.691+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:11.692+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:12.547+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:12.549+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:13.571+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:13.572+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:14.800+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:14.800+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:15.783+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:15.783+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:16.637+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:16.638+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:17.616+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:17.616+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:18.704+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:18.705+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:19.747+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:19.748+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:20.727+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:20.727+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:21.832+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:21.832+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:22.999+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:22.999+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:24.167+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:24.167+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:25.266+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:25.267+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:26.495+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:26.496+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:27.659+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:27.659+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:28.777+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:28.777+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:29.630+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:29.631+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:30.798+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:30.798+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:31.714+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:31.714+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:32.817+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:32.817+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:33.779+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:33.779+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:34.888+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:34.888+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:35.926+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:35.926+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:36.964+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:36.965+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-01T16:32:38.159+05:30  INFO 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Node 1 disconnected.
+2025-09-01T16:32:38.159+05:30  WARN 8912 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2025-09-05T12:18:34.485+05:30  INFO 4944 --- [main] org.userService.App                      : Starting App using Java 21.0.8 with PID 4944 (C:\Users\VIVEK\Documents\Projects\project_expence\userService\app\build\classes\java\main started by VIVEK in C:\Users\VIVEK\Documents\Projects\project_expence\userService)
+2025-09-05T12:18:34.487+05:30 DEBUG 4944 --- [main] org.userService.App                      : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-09-05T12:18:34.487+05:30  INFO 4944 --- [main] org.userService.App                      : No active profile set, falling back to 1 default profile: "default"
+2025-09-05T12:18:35.446+05:30  INFO 4944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-05T12:18:35.514+05:30  INFO 4944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interface.
+2025-09-05T12:18:36.437+05:30  INFO 4944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-09-05T12:18:36.454+05:30  INFO 4944 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-05T12:18:36.454+05:30  INFO 4944 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-09-05T12:18:36.522+05:30  INFO 4944 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-05T12:18:36.523+05:30  INFO 4944 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1990 ms
+2025-09-05T12:18:36.751+05:30 DEBUG 4944 --- [main] org.userService.security.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2025-09-05T12:18:36.926+05:30  INFO 4944 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-05T12:18:37.016+05:30  INFO 4944 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-09-05T12:18:37.060+05:30  INFO 4944 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-05T12:18:37.380+05:30  INFO 4944 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-05T12:18:37.420+05:30  INFO 4944 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-05T12:18:37.812+05:30  INFO 4944 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e50eb3f
+2025-09-05T12:18:37.813+05:30  INFO 4944 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-05T12:18:37.865+05:30  WARN 4944 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-05T12:18:37.866+05:30  WARN 4944 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-05T12:18:38.072+05:30 ERROR 4944 --- [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: A '@JoinColumn' references a column named 'user_id' but the target entity 'org.userService.entities.UserInfo' has no property which maps to this column
+2025-09-05T12:18:38.072+05:30  WARN 4944 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: A '@JoinColumn' references a column named 'user_id' but the target entity 'org.userService.entities.UserInfo' has no property which maps to this column
+2025-09-05T12:18:38.072+05:30  INFO 4944 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-05T12:18:38.080+05:30  INFO 4944 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-05T12:18:38.084+05:30  INFO 4944 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-09-05T12:18:38.094+05:30  INFO 4944 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-09-05T12:18:38.112+05:30 ERROR 4944 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: A '@JoinColumn' references a column named 'user_id' but the target entity 'org.userService.entities.UserInfo' has no property which maps to this column
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.userService.App.main(App.java:13) ~[main/:na]
+Caused by: org.hibernate.MappingException: A '@JoinColumn' references a column named 'user_id' but the target entity 'org.userService.entities.UserInfo' has no property which maps to this column
+	at org.hibernate.boot.model.internal.AnnotatedJoinColumns.getReferencedColumnsType(AnnotatedJoinColumns.java:321) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.boot.model.internal.BinderHelper.createSyntheticPropertyReference(BinderHelper.java:153) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.boot.model.internal.ToOneFkSecondPass.doSecondPass(ToOneFkSecondPass.java:107) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processEndOfQueue(InFlightMetadataCollectorImpl.java:1910) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processFkSecondPassesInOrder(InFlightMetadataCollectorImpl.java:1859) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1768) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:332) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 16 common frames omitted
+
+2025-09-05T12:22:45.799+05:30  INFO 23096 --- [main] org.userService.App                      : Starting App using Java 21.0.8 with PID 23096 (C:\Users\VIVEK\Documents\Projects\project_expence\userService\app\build\classes\java\main started by VIVEK in C:\Users\VIVEK\Documents\Projects\project_expence\userService)
+2025-09-05T12:22:45.800+05:30 DEBUG 23096 --- [main] org.userService.App                      : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-09-05T12:22:45.801+05:30  INFO 23096 --- [main] org.userService.App                      : No active profile set, falling back to 1 default profile: "default"
+2025-09-05T12:22:46.550+05:30  INFO 23096 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-05T12:22:46.599+05:30  INFO 23096 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interface.
+2025-09-05T12:22:47.407+05:30  INFO 23096 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-09-05T12:22:47.420+05:30  INFO 23096 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-05T12:22:47.421+05:30  INFO 23096 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-09-05T12:22:47.478+05:30  INFO 23096 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-05T12:22:47.478+05:30  INFO 23096 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1634 ms
+2025-09-05T12:22:47.698+05:30 DEBUG 23096 --- [main] org.userService.security.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2025-09-05T12:22:47.876+05:30  INFO 23096 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-05T12:22:47.952+05:30  INFO 23096 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-09-05T12:22:47.988+05:30  INFO 23096 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-05T12:22:48.248+05:30  INFO 23096 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-05T12:22:48.286+05:30  INFO 23096 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-05T12:22:48.559+05:30  INFO 23096 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ab86b2a
+2025-09-05T12:22:48.561+05:30  INFO 23096 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-05T12:22:48.597+05:30  WARN 23096 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-05T12:22:48.598+05:30  WARN 23096 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-05T12:22:49.399+05:30  INFO 23096 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-05T12:22:49.576+05:30  INFO 23096 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-05T12:22:49.959+05:30  WARN 23096 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-05T12:22:50.010+05:30  WARN 23096 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ae5f1ce3-18e4-4435-abf9-df448d23e3ee
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-05T12:22:50.375+05:30  INFO 23096 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-09-05T12:22:50.427+05:30  INFO 23096 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7234db3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@189c6683, org.springframework.security.web.context.SecurityContextHolderFilter@322c70bc, org.springframework.security.web.header.HeaderWriterFilter@3325f17, org.springframework.web.filter.CorsFilter@2972b493, org.springframework.security.web.authentication.logout.LogoutFilter@10806dbe, org.userService.security.JwtAuthFilter@234cd86c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b48784a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e49863e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@58e0f079, org.springframework.security.web.access.ExceptionTranslationFilter@455591ad, org.springframework.security.web.access.intercept.AuthorizationFilter@77e42cbf]
+2025-09-05T12:22:51.058+05:30  INFO 23096 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2025-09-05T12:22:51.111+05:30  INFO 23096 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-userinfo-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = userinfo-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.userService.deserializer.UserInfoDeserializer
+
+2025-09-05T12:22:51.335+05:30  INFO 23096 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
+2025-09-05T12:22:51.335+05:30  INFO 23096 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
+2025-09-05T12:22:51.335+05:30  INFO 23096 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1757055171333
+2025-09-05T12:22:51.345+05:30  INFO 23096 --- [main] fkaConsumerFactory$ExtendedKafkaConsumer : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Subscribed to topic(s): userinfo_json
+2025-09-05T12:22:51.368+05:30  INFO 23096 --- [main] org.userService.App                      : Started App in 5.939 seconds (process running for 6.261)
+2025-09-05T12:22:51.828+05:30  INFO 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Cluster ID: prG7UUdBQx-FsTUT5D00Vg
+2025-09-05T12:22:51.829+05:30  INFO 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-09-05T12:22:51.831+05:30  INFO 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] (Re-)joining group
+2025-09-05T12:22:51.858+05:30  INFO 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Request joining group due to: need to re-join with the given member-id: consumer-userinfo-consumer-group-1-a53e6f97-3028-46ff-8765-bd323be17474
+2025-09-05T12:22:51.859+05:30  INFO 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2025-09-05T12:22:51.859+05:30  INFO 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] (Re-)joining group
+2025-09-05T12:22:54.974+05:30  INFO 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Successfully joined group with generation Generation{generationId=56, memberId='consumer-userinfo-consumer-group-1-a53e6f97-3028-46ff-8765-bd323be17474', protocol='range'}
+2025-09-05T12:22:54.979+05:30  INFO 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Finished assignment for group at generation 56: {consumer-userinfo-consumer-group-1-a53e6f97-3028-46ff-8765-bd323be17474=Assignment(partitions=[userinfo_json-0])}
+2025-09-05T12:22:55.023+05:30  INFO 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Successfully synced group in generation Generation{generationId=56, memberId='consumer-userinfo-consumer-group-1-a53e6f97-3028-46ff-8765-bd323be17474', protocol='range'}
+2025-09-05T12:22:55.023+05:30  INFO 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Notifying assignor about the new Assignment(partitions=[userinfo_json-0])
+2025-09-05T12:22:55.024+05:30  INFO 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Adding newly assigned partitions: userinfo_json-0
+2025-09-05T12:22:55.037+05:30  INFO 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Setting offset for partition userinfo_json-0 to the committed offset FetchPosition{offset=10, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2025-09-05T12:22:55.038+05:30  INFO 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : userinfo-consumer-group : partitions assigned: [userinfo_json-0]
+2025-09-05T12:22:55.256+05:30  INFO 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.u.consumer.AuthServiceConsumer         : ✅ New user saved: vivekshaw16689yg5r66@gmail.com
+2025-09-05T12:22:55.266+05:30  INFO 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.u.consumer.AuthServiceConsumer         : ✅ New user saved: vivekshaw16689gyg5r66@gmail.com
+2025-09-05T12:22:55.276+05:30  INFO 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.u.consumer.AuthServiceConsumer         : ✅ New user saved: vivekshaw16689ygyg5r66@gmail.com
+2025-09-05T12:22:55.285+05:30  INFO 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.u.consumer.AuthServiceConsumer         : ✅ New user saved: vivekshaw1668y9ygyg5r66@gmail.com
+2025-09-05T12:22:55.294+05:30  INFO 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.u.consumer.AuthServiceConsumer         : ✅ New user saved: vivekshaw1668y9yygyg5r66@gmail.com
+2025-09-05T12:22:55.304+05:30  INFO 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.u.consumer.AuthServiceConsumer         : ✅ New user saved: vivekshaw1668y9ytygyg5r66@gmail.com
+2025-09-05T12:22:55.318+05:30  INFO 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.u.consumer.AuthServiceConsumer         : ✅ New user saved: ravif@gr.com
+2025-09-05T12:22:55.326+05:30  WARN 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2025-09-05T12:22:55.326+05:30 ERROR 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'vivekshaw168@gmail.com' for key 'users.UK_6dotkott2kjsp8vw4d0m25fb7'
+2025-09-05T12:22:55.336+05:30 ERROR 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.u.consumer.AuthServiceConsumer         : ❌ Error processing Kafka message for user vivekshaw168@gmail.com: could not execute statement [Duplicate entry 'vivekshaw168@gmail.com' for key 'users.UK_6dotkott2kjsp8vw4d0m25fb7'] [insert into users (created_at,email,first_name,last_name,profile_picture_url,updated_at,username,user_id) values (?,?,?,?,?,?,?,?)]; SQL [insert into users (created_at,email,first_name,last_name,profile_picture_url,updated_at,username,user_id) values (?,?,?,?,?,?,?,?)]; constraint [users.UK_6dotkott2kjsp8vw4d0m25fb7]
+
+org.springframework.dao.DataIntegrityViolationException: could not execute statement [Duplicate entry 'vivekshaw168@gmail.com' for key 'users.UK_6dotkott2kjsp8vw4d0m25fb7'] [insert into users (created_at,email,first_name,last_name,profile_picture_url,updated_at,username,user_id) values (?,?,?,?,?,?,?,?)]; SQL [insert into users (created_at,email,first_name,last_name,profile_picture_url,updated_at,username,user_id) values (?,?,?,?,?,?,?,?)]; constraint [users.UK_6dotkott2kjsp8vw4d0m25fb7]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:290) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:566) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:794) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:757) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:676) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:426) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:164) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.6.jar:6.1.6]
+	at jdk.proxy2/jdk.proxy2.$Proxy146.save(Unknown Source) ~[na:na]
+	at org.userService.consumer.AuthServiceConsumer.lambda$listen$1(AuthServiceConsumer.java:51) ~[main/:na]
+	at java.base/java.util.Optional.ifPresentOrElse(Optional.java:198) ~[na:na]
+	at org.userService.consumer.AuthServiceConsumer.listen(AuthServiceConsumer.java:34) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:169) ~[spring-messaging-6.1.6.jar:6.1.6]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) ~[spring-messaging-6.1.6.jar:6.1.6]
+	at org.springframework.kafka.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:56) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:376) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:92) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:53) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2888) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2866) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.lambda$doInvokeRecordListener$55(KafkaMessageListenerContainer.java:2783) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at io.micrometer.observation.Observation.observe(Observation.java:565) ~[micrometer-observation-1.12.5.jar:1.12.5]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:2781) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeWithRecords(KafkaMessageListenerContainer.java:2631) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:2517) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:2155) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeIfHaveRecords(KafkaMessageListenerContainer.java:1495) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1460) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1330) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [Duplicate entry 'vivekshaw168@gmail.com' for key 'users.UK_6dotkott2kjsp8vw4d0m25fb7'] [insert into users (created_at,email,first_name,last_name,profile_picture_url,updated_at,username,user_id) values (?,?,?,?,?,?,?,?)]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:62) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.performNonBatchedMutation(AbstractMutationExecutor.java:108) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:40) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:52) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinator.doStaticInserts(InsertCoordinator.java:175) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinator.coordinateInsert(InsertCoordinator.java:113) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2873) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:104) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:632) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:499) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:363) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:41) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1403) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:484) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2319) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1976) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-6.1.6.jar:6.1.6]
+	... 38 common frames omitted
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'vivekshaw168@gmail.com' for key 'users.UK_6dotkott2kjsp8vw4d0m25fb7'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	... 59 common frames omitted
+
+2025-09-05T12:22:55.353+05:30  WARN 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2025-09-05T12:22:55.353+05:30 ERROR 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'vivek62904241@gmail.com' for key 'users.UK_6dotkott2kjsp8vw4d0m25fb7'
+2025-09-05T12:22:55.356+05:30 ERROR 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.u.consumer.AuthServiceConsumer         : ❌ Error processing Kafka message for user vivek62904241@gmail.com: could not execute statement [Duplicate entry 'vivek62904241@gmail.com' for key 'users.UK_6dotkott2kjsp8vw4d0m25fb7'] [insert into users (created_at,email,first_name,last_name,profile_picture_url,updated_at,username,user_id) values (?,?,?,?,?,?,?,?)]; SQL [insert into users (created_at,email,first_name,last_name,profile_picture_url,updated_at,username,user_id) values (?,?,?,?,?,?,?,?)]; constraint [users.UK_6dotkott2kjsp8vw4d0m25fb7]
+
+org.springframework.dao.DataIntegrityViolationException: could not execute statement [Duplicate entry 'vivek62904241@gmail.com' for key 'users.UK_6dotkott2kjsp8vw4d0m25fb7'] [insert into users (created_at,email,first_name,last_name,profile_picture_url,updated_at,username,user_id) values (?,?,?,?,?,?,?,?)]; SQL [insert into users (created_at,email,first_name,last_name,profile_picture_url,updated_at,username,user_id) values (?,?,?,?,?,?,?,?)]; constraint [users.UK_6dotkott2kjsp8vw4d0m25fb7]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:290) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:566) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:794) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:757) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:676) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:426) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:164) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.6.jar:6.1.6]
+	at jdk.proxy2/jdk.proxy2.$Proxy146.save(Unknown Source) ~[na:na]
+	at org.userService.consumer.AuthServiceConsumer.lambda$listen$1(AuthServiceConsumer.java:51) ~[main/:na]
+	at java.base/java.util.Optional.ifPresentOrElse(Optional.java:198) ~[na:na]
+	at org.userService.consumer.AuthServiceConsumer.listen(AuthServiceConsumer.java:34) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:169) ~[spring-messaging-6.1.6.jar:6.1.6]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) ~[spring-messaging-6.1.6.jar:6.1.6]
+	at org.springframework.kafka.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:56) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:376) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:92) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:53) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2888) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2866) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.lambda$doInvokeRecordListener$55(KafkaMessageListenerContainer.java:2783) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at io.micrometer.observation.Observation.observe(Observation.java:565) ~[micrometer-observation-1.12.5.jar:1.12.5]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:2781) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeWithRecords(KafkaMessageListenerContainer.java:2631) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:2517) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:2155) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeIfHaveRecords(KafkaMessageListenerContainer.java:1495) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1460) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1330) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [Duplicate entry 'vivek62904241@gmail.com' for key 'users.UK_6dotkott2kjsp8vw4d0m25fb7'] [insert into users (created_at,email,first_name,last_name,profile_picture_url,updated_at,username,user_id) values (?,?,?,?,?,?,?,?)]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:62) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.performNonBatchedMutation(AbstractMutationExecutor.java:108) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:40) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:52) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinator.doStaticInserts(InsertCoordinator.java:175) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinator.coordinateInsert(InsertCoordinator.java:113) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2873) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:104) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:632) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:499) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:363) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:41) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1403) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:484) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2319) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1976) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-6.1.6.jar:6.1.6]
+	... 38 common frames omitted
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'vivek62904241@gmail.com' for key 'users.UK_6dotkott2kjsp8vw4d0m25fb7'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	... 59 common frames omitted
+
+2025-09-05T12:22:55.372+05:30  INFO 23096 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.u.consumer.AuthServiceConsumer         : ✅ New user saved: titlychwdhry16@gmail.com
+2025-09-05T12:28:50.022+05:30  INFO 23084 --- [main] org.userService.App                      : Starting App using Java 21.0.8 with PID 23084 (C:\Users\VIVEK\Documents\Projects\project_expence\userService\app\build\classes\java\main started by VIVEK in C:\Users\VIVEK\Documents\Projects\project_expence\userService)
+2025-09-05T12:28:50.023+05:30 DEBUG 23084 --- [main] org.userService.App                      : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-09-05T12:28:50.024+05:30  INFO 23084 --- [main] org.userService.App                      : No active profile set, falling back to 1 default profile: "default"
+2025-09-05T12:28:50.830+05:30  INFO 23084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-05T12:28:50.892+05:30  INFO 23084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interface.
+2025-09-05T12:28:51.701+05:30  INFO 23084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-09-05T12:28:51.719+05:30  INFO 23084 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-05T12:28:51.719+05:30  INFO 23084 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-09-05T12:28:51.798+05:30  INFO 23084 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-05T12:28:51.798+05:30  INFO 23084 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1723 ms
+2025-09-05T12:28:52.007+05:30 DEBUG 23084 --- [main] org.userService.security.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2025-09-05T12:28:52.175+05:30  INFO 23084 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-05T12:28:52.244+05:30  INFO 23084 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-09-05T12:28:52.285+05:30  INFO 23084 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-05T12:28:52.528+05:30  INFO 23084 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-05T12:28:52.569+05:30  INFO 23084 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-05T12:28:52.836+05:30  INFO 23084 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ab86b2a
+2025-09-05T12:28:52.837+05:30  INFO 23084 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-05T12:28:52.876+05:30  WARN 23084 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-05T12:28:52.877+05:30  WARN 23084 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-05T12:28:53.582+05:30  INFO 23084 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-05T12:28:53.644+05:30  INFO 23084 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-05T12:28:53.970+05:30  WARN 23084 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-05T12:28:54.014+05:30  WARN 23084 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f445102e-9985-4a9f-b87a-0720dd285bb2
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-05T12:28:54.315+05:30  INFO 23084 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-09-05T12:28:54.369+05:30  INFO 23084 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@744c16fb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31e5d408, org.springframework.security.web.context.SecurityContextHolderFilter@55e75ce0, org.springframework.security.web.header.HeaderWriterFilter@5d6cac57, org.springframework.web.filter.CorsFilter@7aaf0f0a, org.springframework.security.web.authentication.logout.LogoutFilter@4d6fa22c, org.userService.security.JwtAuthFilter@39c87b42, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@32be672d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@736af6f3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@638b05fb, org.springframework.security.web.access.ExceptionTranslationFilter@42af2977, org.springframework.security.web.access.intercept.AuthorizationFilter@2620264e]
+2025-09-05T12:28:54.984+05:30  INFO 23084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2025-09-05T12:28:55.025+05:30  INFO 23084 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-userinfo-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = userinfo-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.userService.deserializer.UserInfoDeserializer
+
+2025-09-05T12:28:55.155+05:30  INFO 23084 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
+2025-09-05T12:28:55.156+05:30  INFO 23084 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
+2025-09-05T12:28:55.156+05:30  INFO 23084 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1757055535154
+2025-09-05T12:28:55.164+05:30  INFO 23084 --- [main] fkaConsumerFactory$ExtendedKafkaConsumer : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Subscribed to topic(s): userinfo_json
+2025-09-05T12:28:55.180+05:30  INFO 23084 --- [main] org.userService.App                      : Started App in 5.529 seconds (process running for 5.851)
+2025-09-05T12:28:55.509+05:30  INFO 23084 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Cluster ID: prG7UUdBQx-FsTUT5D00Vg
+2025-09-05T12:28:55.510+05:30  INFO 23084 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-09-05T12:28:55.513+05:30  INFO 23084 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] (Re-)joining group
+2025-09-05T12:28:55.523+05:30  INFO 23084 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Request joining group due to: need to re-join with the given member-id: consumer-userinfo-consumer-group-1-50a59c80-edc8-41a5-8aa6-cc289140a4e7
+2025-09-05T12:28:55.524+05:30  INFO 23084 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2025-09-05T12:28:55.524+05:30  INFO 23084 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] (Re-)joining group
+2025-09-05T12:28:58.767+05:30  INFO 23084 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Successfully joined group with generation Generation{generationId=58, memberId='consumer-userinfo-consumer-group-1-50a59c80-edc8-41a5-8aa6-cc289140a4e7', protocol='range'}
+2025-09-05T12:28:58.771+05:30  INFO 23084 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Finished assignment for group at generation 58: {consumer-userinfo-consumer-group-1-50a59c80-edc8-41a5-8aa6-cc289140a4e7=Assignment(partitions=[userinfo_json-0])}
+2025-09-05T12:28:58.777+05:30  INFO 23084 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Successfully synced group in generation Generation{generationId=58, memberId='consumer-userinfo-consumer-group-1-50a59c80-edc8-41a5-8aa6-cc289140a4e7', protocol='range'}
+2025-09-05T12:28:58.778+05:30  INFO 23084 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Notifying assignor about the new Assignment(partitions=[userinfo_json-0])
+2025-09-05T12:28:58.779+05:30  INFO 23084 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Adding newly assigned partitions: userinfo_json-0
+2025-09-05T12:28:58.786+05:30  INFO 23084 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Setting offset for partition userinfo_json-0 to the committed offset FetchPosition{offset=20, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2025-09-05T12:28:58.787+05:30  INFO 23084 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : userinfo-consumer-group : partitions assigned: [userinfo_json-0]
+2025-09-05T12:34:11.526+05:30  INFO 8404 --- [main] org.userService.App                      : Starting App using Java 21.0.8 with PID 8404 (C:\Users\VIVEK\Documents\Projects\project_expence\userService\app\build\classes\java\main started by VIVEK in C:\Users\VIVEK\Documents\Projects\project_expence\userService)
+2025-09-05T12:34:11.529+05:30 DEBUG 8404 --- [main] org.userService.App                      : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-09-05T12:34:11.529+05:30  INFO 8404 --- [main] org.userService.App                      : No active profile set, falling back to 1 default profile: "default"
+2025-09-05T12:34:12.341+05:30  INFO 8404 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-05T12:34:12.405+05:30  INFO 8404 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interface.
+2025-09-05T12:34:13.234+05:30  INFO 8404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-09-05T12:34:13.251+05:30  INFO 8404 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-05T12:34:13.251+05:30  INFO 8404 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-09-05T12:34:13.316+05:30  INFO 8404 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-05T12:34:13.316+05:30  INFO 8404 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1736 ms
+2025-09-05T12:34:13.527+05:30 DEBUG 8404 --- [main] org.userService.security.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2025-09-05T12:34:13.699+05:30  INFO 8404 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-05T12:34:13.763+05:30  INFO 8404 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-09-05T12:34:13.809+05:30  INFO 8404 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-05T12:34:14.057+05:30  INFO 8404 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-05T12:34:14.103+05:30  INFO 8404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-05T12:34:14.371+05:30  INFO 8404 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b22214d
+2025-09-05T12:34:14.372+05:30  INFO 8404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-05T12:34:14.411+05:30  WARN 8404 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-05T12:34:14.413+05:30  WARN 8404 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-05T12:34:15.149+05:30  INFO 8404 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-05T12:34:15.210+05:30  INFO 8404 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-05T12:34:15.563+05:30  WARN 8404 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-05T12:34:15.603+05:30  WARN 8404 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c53a8c90-f009-4238-a03f-3db5e06b4f7b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-05T12:34:15.932+05:30  INFO 8404 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-09-05T12:34:16.024+05:30  INFO 8404 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@20a533b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5db6083b, org.springframework.security.web.context.SecurityContextHolderFilter@26f0ab88, org.springframework.security.web.header.HeaderWriterFilter@736af6f3, org.springframework.web.filter.CorsFilter@3db48e6, org.springframework.security.web.authentication.logout.LogoutFilter@3eb29382, org.userService.security.JwtAuthFilter@571a663c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4a5e0faf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6421d85c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38f2342b, org.springframework.security.web.access.ExceptionTranslationFilter@55e75ce0, org.springframework.security.web.access.intercept.AuthorizationFilter@2972b493]
+2025-09-05T12:34:16.636+05:30  INFO 8404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2025-09-05T12:34:16.681+05:30  INFO 8404 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-userinfo-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = userinfo-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.userService.deserializer.UserInfoDeserializer
+
+2025-09-05T12:34:16.817+05:30  INFO 8404 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
+2025-09-05T12:34:16.817+05:30  INFO 8404 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
+2025-09-05T12:34:16.817+05:30  INFO 8404 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1757055856815
+2025-09-05T12:34:16.828+05:30  INFO 8404 --- [main] fkaConsumerFactory$ExtendedKafkaConsumer : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Subscribed to topic(s): userinfo_json
+2025-09-05T12:34:16.845+05:30  INFO 8404 --- [main] org.userService.App                      : Started App in 5.698 seconds (process running for 6.041)
+2025-09-05T12:34:17.189+05:30  INFO 8404 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Cluster ID: prG7UUdBQx-FsTUT5D00Vg
+2025-09-05T12:34:17.190+05:30  INFO 8404 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-09-05T12:34:17.193+05:30  INFO 8404 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] (Re-)joining group
+2025-09-05T12:34:17.206+05:30  INFO 8404 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Request joining group due to: need to re-join with the given member-id: consumer-userinfo-consumer-group-1-a733fe67-772c-4020-8d4c-2f1a9974e87b
+2025-09-05T12:34:17.206+05:30  INFO 8404 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2025-09-05T12:34:17.206+05:30  INFO 8404 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] (Re-)joining group
+2025-09-05T12:34:23.909+05:30  INFO 8404 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Successfully joined group with generation Generation{generationId=59, memberId='consumer-userinfo-consumer-group-1-a733fe67-772c-4020-8d4c-2f1a9974e87b', protocol='range'}
+2025-09-05T12:34:23.914+05:30  INFO 8404 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Finished assignment for group at generation 59: {consumer-userinfo-consumer-group-1-a733fe67-772c-4020-8d4c-2f1a9974e87b=Assignment(partitions=[userinfo_json-0])}
+2025-09-05T12:34:23.921+05:30  INFO 8404 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Successfully synced group in generation Generation{generationId=59, memberId='consumer-userinfo-consumer-group-1-a733fe67-772c-4020-8d4c-2f1a9974e87b', protocol='range'}
+2025-09-05T12:34:23.922+05:30  INFO 8404 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Notifying assignor about the new Assignment(partitions=[userinfo_json-0])
+2025-09-05T12:34:23.924+05:30  INFO 8404 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Adding newly assigned partitions: userinfo_json-0
+2025-09-05T12:34:23.932+05:30  INFO 8404 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Setting offset for partition userinfo_json-0 to the committed offset FetchPosition{offset=20, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2025-09-05T12:34:23.934+05:30  INFO 8404 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : userinfo-consumer-group : partitions assigned: [userinfo_json-0]
+2025-09-05T12:37:37.417+05:30  INFO 8404 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.u.consumer.AuthServiceConsumer         : ✅ New user saved: vivekshaw168@gmail.com
+2025-09-05T12:39:41.235+05:30  WARN 8404 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2025-09-05T12:39:41.236+05:30 ERROR 8404 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'vivekshaw168@gmail.com' for key 'users.UK_6dotkott2kjsp8vw4d0m25fb7'
+2025-09-05T12:39:41.245+05:30 ERROR 8404 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.u.consumer.AuthServiceConsumer         : ❌ Error processing Kafka message for user vivekshaw168@gmail.com: could not execute statement [Duplicate entry 'vivekshaw168@gmail.com' for key 'users.UK_6dotkott2kjsp8vw4d0m25fb7'] [insert into users (created_at,email,first_name,last_name,profile_picture_url,updated_at,username,user_id) values (?,?,?,?,?,?,?,?)]; SQL [insert into users (created_at,email,first_name,last_name,profile_picture_url,updated_at,username,user_id) values (?,?,?,?,?,?,?,?)]; constraint [users.UK_6dotkott2kjsp8vw4d0m25fb7]
+
+org.springframework.dao.DataIntegrityViolationException: could not execute statement [Duplicate entry 'vivekshaw168@gmail.com' for key 'users.UK_6dotkott2kjsp8vw4d0m25fb7'] [insert into users (created_at,email,first_name,last_name,profile_picture_url,updated_at,username,user_id) values (?,?,?,?,?,?,?,?)]; SQL [insert into users (created_at,email,first_name,last_name,profile_picture_url,updated_at,username,user_id) values (?,?,?,?,?,?,?,?)]; constraint [users.UK_6dotkott2kjsp8vw4d0m25fb7]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:290) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:566) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:794) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:757) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:676) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:426) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:164) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.6.jar:6.1.6]
+	at jdk.proxy2/jdk.proxy2.$Proxy146.save(Unknown Source) ~[na:na]
+	at org.userService.consumer.AuthServiceConsumer.lambda$listen$1(AuthServiceConsumer.java:51) ~[main/:na]
+	at java.base/java.util.Optional.ifPresentOrElse(Optional.java:198) ~[na:na]
+	at org.userService.consumer.AuthServiceConsumer.listen(AuthServiceConsumer.java:34) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:169) ~[spring-messaging-6.1.6.jar:6.1.6]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) ~[spring-messaging-6.1.6.jar:6.1.6]
+	at org.springframework.kafka.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:56) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:376) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:92) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:53) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2888) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2866) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.lambda$doInvokeRecordListener$55(KafkaMessageListenerContainer.java:2783) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at io.micrometer.observation.Observation.observe(Observation.java:565) ~[micrometer-observation-1.12.5.jar:1.12.5]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:2781) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeWithRecords(KafkaMessageListenerContainer.java:2631) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:2517) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:2155) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeIfHaveRecords(KafkaMessageListenerContainer.java:1495) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1460) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1330) ~[spring-kafka-3.1.4.jar:3.1.4]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [Duplicate entry 'vivekshaw168@gmail.com' for key 'users.UK_6dotkott2kjsp8vw4d0m25fb7'] [insert into users (created_at,email,first_name,last_name,profile_picture_url,updated_at,username,user_id) values (?,?,?,?,?,?,?,?)]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:62) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.performNonBatchedMutation(AbstractMutationExecutor.java:108) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:40) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:52) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinator.doStaticInserts(InsertCoordinator.java:175) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinator.coordinateInsert(InsertCoordinator.java:113) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2873) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:104) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:632) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:499) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:363) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:41) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1403) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:484) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2319) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1976) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-6.1.6.jar:6.1.6]
+	... 38 common frames omitted
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'vivekshaw168@gmail.com' for key 'users.UK_6dotkott2kjsp8vw4d0m25fb7'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	... 59 common frames omitted
+
+2025-09-05T12:53:27.496+05:30  INFO 25036 --- [main] org.userService.App                      : Starting App using Java 21.0.8 with PID 25036 (C:\Users\VIVEK\Documents\Projects\project_expence\userService\app\build\classes\java\main started by VIVEK in C:\Users\VIVEK\Documents\Projects\project_expence\userService)
+2025-09-05T12:53:27.497+05:30 DEBUG 25036 --- [main] org.userService.App                      : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-09-05T12:53:27.498+05:30  INFO 25036 --- [main] org.userService.App                      : No active profile set, falling back to 1 default profile: "default"
+2025-09-05T12:53:28.348+05:30  INFO 25036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-05T12:53:28.407+05:30  INFO 25036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interface.
+2025-09-05T12:53:29.243+05:30  INFO 25036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-09-05T12:53:29.259+05:30  INFO 25036 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-05T12:53:29.260+05:30  INFO 25036 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-09-05T12:53:29.322+05:30  INFO 25036 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-05T12:53:29.323+05:30  INFO 25036 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1775 ms
+2025-09-05T12:53:29.569+05:30 DEBUG 25036 --- [main] org.userService.security.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2025-09-05T12:53:29.743+05:30  INFO 25036 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-05T12:53:29.837+05:30  INFO 25036 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-09-05T12:53:29.886+05:30  INFO 25036 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-05T12:53:30.170+05:30  INFO 25036 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-05T12:53:30.206+05:30  INFO 25036 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-05T12:53:30.481+05:30  INFO 25036 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57515944
+2025-09-05T12:53:30.483+05:30  INFO 25036 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-05T12:53:30.518+05:30  WARN 25036 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-05T12:53:30.519+05:30  WARN 25036 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-05T12:53:31.225+05:30  INFO 25036 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-05T12:53:31.282+05:30  INFO 25036 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-05T12:53:31.590+05:30  WARN 25036 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-05T12:53:31.635+05:30  WARN 25036 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9c905c45-9a4a-4e98-a958-498294258703
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-05T12:53:31.966+05:30  INFO 25036 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-09-05T12:53:32.022+05:30  INFO 25036 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@68312b85, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ab0168, org.springframework.security.web.context.SecurityContextHolderFilter@4a5e0faf, org.springframework.security.web.header.HeaderWriterFilter@4a304820, org.springframework.web.filter.CorsFilter@5c6ee543, org.springframework.security.web.authentication.logout.LogoutFilter@7306836f, org.userService.security.JwtAuthFilter@1373e3ee, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5eb89000, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1df8c7f4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7594d189, org.springframework.security.web.access.ExceptionTranslationFilter@32be672d, org.springframework.security.web.access.intercept.AuthorizationFilter@20a533b]
+2025-09-05T12:53:32.704+05:30  INFO 25036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2025-09-05T12:53:32.750+05:30  INFO 25036 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-userinfo-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = userinfo-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.userService.deserializer.UserInfoDeserializer
+
+2025-09-05T12:53:32.894+05:30  INFO 25036 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
+2025-09-05T12:53:32.894+05:30  INFO 25036 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
+2025-09-05T12:53:32.894+05:30  INFO 25036 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1757057012893
+2025-09-05T12:53:32.908+05:30  INFO 25036 --- [main] fkaConsumerFactory$ExtendedKafkaConsumer : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Subscribed to topic(s): userinfo_json
+2025-09-05T12:53:32.928+05:30  INFO 25036 --- [main] org.userService.App                      : Started App in 5.814 seconds (process running for 6.149)
+2025-09-05T12:53:33.247+05:30  INFO 25036 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Cluster ID: prG7UUdBQx-FsTUT5D00Vg
+2025-09-05T12:53:33.248+05:30  INFO 25036 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-09-05T12:53:33.250+05:30  INFO 25036 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] (Re-)joining group
+2025-09-05T12:53:33.262+05:30  INFO 25036 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Request joining group due to: need to re-join with the given member-id: consumer-userinfo-consumer-group-1-2c72f3fc-9a76-49bc-9fa6-8062c49757eb
+2025-09-05T12:53:33.264+05:30  INFO 25036 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2025-09-05T12:53:33.264+05:30  INFO 25036 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] (Re-)joining group
+2025-09-05T12:53:36.414+05:30  INFO 25036 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Successfully joined group with generation Generation{generationId=61, memberId='consumer-userinfo-consumer-group-1-2c72f3fc-9a76-49bc-9fa6-8062c49757eb', protocol='range'}
+2025-09-05T12:53:36.425+05:30  INFO 25036 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Finished assignment for group at generation 61: {consumer-userinfo-consumer-group-1-2c72f3fc-9a76-49bc-9fa6-8062c49757eb=Assignment(partitions=[userinfo_json-0])}
+2025-09-05T12:53:36.431+05:30  INFO 25036 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Successfully synced group in generation Generation{generationId=61, memberId='consumer-userinfo-consumer-group-1-2c72f3fc-9a76-49bc-9fa6-8062c49757eb', protocol='range'}
+2025-09-05T12:53:36.432+05:30  INFO 25036 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Notifying assignor about the new Assignment(partitions=[userinfo_json-0])
+2025-09-05T12:53:36.434+05:30  INFO 25036 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Adding newly assigned partitions: userinfo_json-0
+2025-09-05T12:53:36.441+05:30  INFO 25036 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Setting offset for partition userinfo_json-0 to the committed offset FetchPosition{offset=22, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2025-09-05T12:53:36.442+05:30  INFO 25036 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : userinfo-consumer-group : partitions assigned: [userinfo_json-0]
+2025-09-05T12:54:41.097+05:30  INFO 25036 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.u.consumer.AuthServiceConsumer         : ✅ New user saved: vivek62904241@gmail.com
+2025-09-05T13:12:08.966+05:30  INFO 2372 --- [main] org.userService.App                      : Starting App using Java 21.0.8 with PID 2372 (C:\Users\VIVEK\Documents\Projects\project_expence\userService\app\build\classes\java\main started by VIVEK in C:\Users\VIVEK\Documents\Projects\project_expence\userService)
+2025-09-05T13:12:08.967+05:30 DEBUG 2372 --- [main] org.userService.App                      : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-09-05T13:12:08.968+05:30  INFO 2372 --- [main] org.userService.App                      : No active profile set, falling back to 1 default profile: "default"
+2025-09-05T13:12:09.767+05:30  INFO 2372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-05T13:12:09.827+05:30  INFO 2372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interface.
+2025-09-05T13:12:10.652+05:30  INFO 2372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-09-05T13:12:10.667+05:30  INFO 2372 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-05T13:12:10.668+05:30  INFO 2372 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-09-05T13:12:10.726+05:30  INFO 2372 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-05T13:12:10.727+05:30  INFO 2372 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1715 ms
+2025-09-05T13:12:10.951+05:30 DEBUG 2372 --- [main] org.userService.security.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2025-09-05T13:12:11.122+05:30  INFO 2372 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-05T13:12:11.177+05:30  INFO 2372 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-09-05T13:12:11.215+05:30  INFO 2372 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-05T13:12:11.434+05:30  INFO 2372 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-05T13:12:11.466+05:30  INFO 2372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-05T13:12:11.768+05:30  INFO 2372 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ab86b2a
+2025-09-05T13:12:11.771+05:30  INFO 2372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-05T13:12:11.805+05:30  WARN 2372 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-05T13:12:11.806+05:30  WARN 2372 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-05T13:12:12.509+05:30  INFO 2372 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-05T13:12:12.591+05:30  INFO 2372 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-05T13:12:12.921+05:30  WARN 2372 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-05T13:12:12.969+05:30  WARN 2372 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 4779e288-2c3a-4f4c-a13e-57149c57263b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-05T13:12:13.323+05:30  INFO 2372 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-09-05T13:12:13.379+05:30  INFO 2372 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7aaf0f0a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@638b05fb, org.springframework.security.web.context.SecurityContextHolderFilter@35e63d26, org.springframework.security.web.header.HeaderWriterFilter@5d6cac57, org.springframework.web.filter.CorsFilter@77e42cbf, org.springframework.security.web.authentication.logout.LogoutFilter@4b094115, org.userService.security.JwtAuthFilter@39c87b42, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@276e5add, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b24fb6f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@68bef3df, org.springframework.security.web.access.ExceptionTranslationFilter@42af2977, org.springframework.security.web.access.intercept.AuthorizationFilter@59e24c62]
+2025-09-05T13:12:13.867+05:30  INFO 2372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2025-09-05T13:12:13.903+05:30  INFO 2372 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-userinfo-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = userinfo-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.userService.deserializer.UserInfoDeserializer
+
+2025-09-05T13:12:14.032+05:30  INFO 2372 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
+2025-09-05T13:12:14.032+05:30  INFO 2372 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
+2025-09-05T13:12:14.032+05:30  INFO 2372 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1757058134031
+2025-09-05T13:12:14.042+05:30  INFO 2372 --- [main] fkaConsumerFactory$ExtendedKafkaConsumer : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Subscribed to topic(s): userinfo_json
+2025-09-05T13:12:14.057+05:30  INFO 2372 --- [main] org.userService.App                      : Started App in 5.46 seconds (process running for 5.785)
+2025-09-05T13:12:14.410+05:30  INFO 2372 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Cluster ID: prG7UUdBQx-FsTUT5D00Vg
+2025-09-05T13:12:14.411+05:30  INFO 2372 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-09-05T13:12:14.413+05:30  INFO 2372 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] (Re-)joining group
+2025-09-05T13:12:14.424+05:30  INFO 2372 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Request joining group due to: need to re-join with the given member-id: consumer-userinfo-consumer-group-1-13b85ce6-acbf-48d8-a5be-650b0192c150
+2025-09-05T13:12:14.425+05:30  INFO 2372 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2025-09-05T13:12:14.425+05:30  INFO 2372 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] (Re-)joining group
+2025-09-05T13:12:17.527+05:30  INFO 2372 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Successfully joined group with generation Generation{generationId=63, memberId='consumer-userinfo-consumer-group-1-13b85ce6-acbf-48d8-a5be-650b0192c150', protocol='range'}
+2025-09-05T13:12:17.534+05:30  INFO 2372 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Finished assignment for group at generation 63: {consumer-userinfo-consumer-group-1-13b85ce6-acbf-48d8-a5be-650b0192c150=Assignment(partitions=[userinfo_json-0])}
+2025-09-05T13:12:17.541+05:30  INFO 2372 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Successfully synced group in generation Generation{generationId=63, memberId='consumer-userinfo-consumer-group-1-13b85ce6-acbf-48d8-a5be-650b0192c150', protocol='range'}
+2025-09-05T13:12:17.541+05:30  INFO 2372 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Notifying assignor about the new Assignment(partitions=[userinfo_json-0])
+2025-09-05T13:12:17.543+05:30  INFO 2372 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Adding newly assigned partitions: userinfo_json-0
+2025-09-05T13:12:17.548+05:30  INFO 2372 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-userinfo-consumer-group-1, groupId=userinfo-consumer-group] Setting offset for partition userinfo_json-0 to the committed offset FetchPosition{offset=23, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2025-09-05T13:12:17.549+05:30  INFO 2372 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : userinfo-consumer-group : partitions assigned: [userinfo_json-0]
+2025-09-05T13:12:52.775+05:30  INFO 2372 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.u.consumer.AuthServiceConsumer         : ✅ New user saved: myself.vivekanandshaw@gmail.com
+2025-09-05T13:13:16.172+05:30  INFO 2372 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.u.consumer.AuthServiceConsumer         : 🔄 User updated: myself.vivekanandshaw@gmail.com

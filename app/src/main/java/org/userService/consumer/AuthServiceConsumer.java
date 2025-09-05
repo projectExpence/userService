@@ -7,8 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 import org.userService.dto.UserInfoDto;
-import org.userService.entities.UserEntity;
+import org.userService.entities.UserInfo;
 import org.userService.repository.UserRepository;
+
+import java.util.Optional;
 
 @Service
 @Slf4j
@@ -29,29 +31,36 @@ public class AuthServiceConsumer {
 
     @KafkaListener(topics = "${spring.kafka.topic.name}",groupId = "${spring.kafka.consumer.group-id}")
     public void listen(UserInfoDto userInfoDto){
-        try{
-        userRepository.findById(userInfoDto.getEmail())
-                .ifPresentOrElse(existingUser ->{
-                    existingUser.setFirstName(userInfoDto.getFirstName());
-                    existingUser.setLastName(userInfoDto.getLastName());
-                    existingUser.setUsername(userInfoDto.getUsername());
-                    existingUser.setEmail(userInfoDto.getEmail());
-                    existingUser.setProfilePictureUrl(userInfoDto.getProfilePictureUrl());
-                    userRepository.save(existingUser);
-                    log.info("🔄 User updated: {}", userInfoDto.getEmail());
-                }, ()->{
-                    UserEntity userEntity = UserEntity.builder()
-                            .userId(userInfoDto.getUserId())
-                            .firstName(userInfoDto.getFirstName())
-                            .lastName(userInfoDto.getLastName())
-                            .username(userInfoDto.getUsername())
-                            .email(userInfoDto.getEmail())
-                            .profilePictureUrl(userInfoDto.getProfilePictureUrl())
-                            .build();
-                    userRepository.save(userEntity);
-                    log.info("✅ New user saved: {}", userInfoDto.getEmail());
-                });
-            } catch (Exception e){
+        try {
+            Optional<UserInfo> existingUserOpt = userRepository.findByEmail(userInfoDto.getEmail());
+
+            if (existingUserOpt.isPresent()) {
+                UserInfo existingUser = existingUserOpt.get();
+
+                // Only update mutable fields (not email/username/userId)
+                existingUser.setFirstName(userInfoDto.getFirstName());
+                existingUser.setLastName(userInfoDto.getLastName());
+                existingUser.setProfilePictureUrl(userInfoDto.getProfilePictureUrl());
+
+                userRepository.save(existingUser);
+                log.info("🔄 User updated: {}", userInfoDto.getEmail());
+            } else {
+                UserInfo newUser = UserInfo.builder()
+                        .userId(userInfoDto.getUserId())
+                        .firstName(userInfoDto.getFirstName())
+                        .lastName(userInfoDto.getLastName())
+                        .username(userInfoDto.getUsername())
+                        .email(userInfoDto.getEmail())
+                        .profilePictureUrl(userInfoDto.getProfilePictureUrl())
+                        .build();
+
+                userRepository.save(newUser);
+                log.info("✅ New user saved: {}", userInfoDto.getEmail());
+            }
+
+            kafkaUserProcessed.increment();
+
+        } catch (Exception e){
             log.error("❌ Error processing Kafka message for user {}: {}", userInfoDto.getEmail(), e.getMessage(), e);
         }
     }

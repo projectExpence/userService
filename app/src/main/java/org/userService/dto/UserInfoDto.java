@@ -22,4 +22,5 @@ public class UserInfoDto {
     private String username;
     private String email;
     private String profilePictureUrl;
+    private boolean isNewUser;
 }

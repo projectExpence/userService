@@ -21,7 +21,7 @@ import java.time.Instant;
 @Builder
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Table(name = "users")
-public class UserEntity {
+public class UserInfo {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     @Column(updatable = false, nullable = false)
