@@ -14,10 +14,10 @@ import org.userService.Enums.*;
 public class UserPreference {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private String id;
+    private String userId;
 
     @OneToOne
+    @MapsId
     @JoinColumn(name = "userId", referencedColumnName = "userID")
     private UserInfo user;
 

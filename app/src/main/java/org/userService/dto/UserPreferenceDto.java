@@ -2,6 +2,8 @@ package org.userService.dto;
 
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 public class UserPreferenceDto {
     private String gender;    // enum
@@ -10,5 +12,6 @@ public class UserPreferenceDto {
     private String incomeLevel; // enum eg: LOW,MED,HIGH
     private String goal; // enum eg: SAVE, TRACK MONEY
     private String riskTolerance; // enum eg: LOW , MED ,HIGH
+    private List<String> hobbies;
 
 }

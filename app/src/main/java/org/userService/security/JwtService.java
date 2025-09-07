@@ -18,6 +18,18 @@ public class JwtService {
         this.secretKey = Keys.hmacShaKeyFor(keyBytes);
     }
 
+    public String extractEmail(String token) {
+        return extractAllClaims(token).getSubject(); // email is stored in "sub"
+    }
+    private Claims extractAllClaims(String token) {
+        return Jwts
+                .parser()
+                .verifyWith(secretKey)
+                .build()
+                .parseSignedClaims(token)
+                .getPayload();
+    }
+
     public Claims validateToken(String token){
         return Jwts.parser()
                 .verifyWith(secretKey)

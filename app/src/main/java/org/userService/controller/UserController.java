@@ -9,7 +9,7 @@ import org.userService.dto.UserProfileDto;
 import org.userService.repository.UserRepository;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/user")
 @RequiredArgsConstructor
 public class UserController {
     private final UserRepository userRepository;
